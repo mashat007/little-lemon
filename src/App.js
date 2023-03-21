@@ -5,6 +5,9 @@ import Navbar from './Components/Nav/Navbar';
 import Home from './Pages/Home';
 import About from './Pages/About';
 import Services from './Pages/Services';
+import Contact from './Pages/Contact';
+import Signin from './Pages/Signin';
+import Signup from './Pages/Signup';
 
 
 function App() {
@@ -17,6 +20,9 @@ function App() {
       <Route path='/' exact element={<Home />}/>
       <Route path='/about' exact element={<About />}/>
       <Route path='/services' exact element={<Services />}/>
+      <Route path='/contact' exact element={<Contact />}/>
+      <Route path='/signin' exact element={<Signin />}/>
+      <Route path='/signup' exact element={<Signup />}/>
     </Routes>
    </BrowserRouter>
 

@@ -1,13 +1,19 @@
 import React from 'react'
 // import styled from 'styled-components';
-import {Link, NavLink}  from "react-router-dom";
+import { NavLink }  from "react-router-dom";
 import MenuIcon from '@mui/icons-material/Menu';
-import ClearIcon from '@mui/icons-material/Clear';
+// import ClearIcon from '@mui/icons-material/Clear';
 import '../Nav/Navbar.css';
 
 const Navbar = () => {
-    const handleClick = () =>{
-        alert("Clicked")
+    const handleClick = (event) =>{
+        event.preventDefault();
+        var mobileValue = document.getElementById("mobileLink");
+        if(mobileValue.style.display === "block"){
+            mobileValue.style.display = "none";
+        }else{
+            mobileValue.style.display = "block";
+        }
     }
     return(
         <>
@@ -17,8 +23,32 @@ const Navbar = () => {
                 </NavLink>
                 <div className="hamburger">
                     <MenuIcon className='hamburger-icon' onClick={handleClick} />
-                    {/* <ClearIcon className='hamburger-icon' /> */}
                 </div>
+                <div className="navMenu">
+                    <NavLink to="/" className="navLink"  activeStyle >
+                        Home
+                    </NavLink>
+                    <NavLink to="/about" className="navLink"  activeStyle >
+                        About
+                    </NavLink>
+                    <NavLink to="/services" className="navLink" activeStyle>
+                        Services
+                    </NavLink>
+                    <NavLink to="/contact" className="navLink" activeStyle>
+                        Contact Us
+                    </NavLink>
+                    <NavLink to="/signup" className="navLink" activeStyle>
+                        Sign up
+                    </NavLink>
+                </div>
+                <div className="signin">
+                    <NavLink to="/signin" className="navLink" activeStyle>
+                        Sign-in
+                    </NavLink>
+                </div>
+            </nav>
+            <div id="mobileLink">
+            <nav className='nav'>
                 <div className="navMenu">
                     <NavLink to="/about" className="navLink"  activeStyle >
                         About
@@ -29,16 +59,17 @@ const Navbar = () => {
                     <NavLink to="/contact" className="navLink" activeStyle>
                         Contact Us
                     </NavLink>
-                    <NavLink to="/sign-up" className="navLink" activeStyle>
+                    <NavLink to="/signup" className="navLink" activeStyle>
                         Sign up
                     </NavLink>
-                </div>
-                <div className="signin">
-                    <NavLink to="/sign-in" className="navLink" activeStyle>
-                        Sign-in
+                    <NavLink to="/signin" className="navLink" activeStyle>
+                        Sign in
                     </NavLink>
                 </div>
+                
             </nav>
+
+            </div>
           
         </>
     );
