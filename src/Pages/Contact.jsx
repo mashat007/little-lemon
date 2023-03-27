@@ -1,5 +1,8 @@
 import React from 'react';
 import './Contact.css';
+import LocationOnIcon from '@mui/icons-material/LocationOn';
+import PhoneInTalkIcon from '@mui/icons-material/PhoneInTalk';
+import MailOutlineIcon from '@mui/icons-material/MailOutline';
 
 const Contact = () => {
     return(
@@ -8,17 +11,17 @@ const Contact = () => {
                 <div className="contactContent">
                     <div className="contactLinks">
                         <div className="contactAddress">
-                            <div className="contactLogo">Logo</div>
+                            <LocationOnIcon  className='logo'/>
                             <h4>Address</h4>
                             <p>The Gold Avenue 123/3</p>
                         </div>
                         <div className="contactPhone">
-                            <div className="contactLogo">Logo</div>
+                            <PhoneInTalkIcon className='logo' />
                             <h4>Phone</h4>
                             <p>+234801111111</p>
                         </div>
                         <div className="contactEmail">
-                            <div className="contactLogo">Logo</div>
+                            <MailOutlineIcon className='logo' />
                             <h4>Email</h4>
                             <p>info@littlelemon.com</p>
                         </div>

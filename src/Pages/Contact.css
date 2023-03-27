@@ -29,17 +29,27 @@
 
 }
 .contactAddress {
-    margin: 30px 0px;
+    margin: 20px 0px;
+}
+.contactAddress .logo{
+    font-size: 45px;
 }
 .contactLogo, h4 {
     margin: 10px 0px;
 }
 
+
 .contactPhone {
-    margin: 30px 0px;
+    margin: 20px 0px;
+}
+.contactPhone .logo {
+   font-size: 45px;
 }
 .contactEmail {
-    margin: 30px 0px;
+    margin: 20px 0px;
+}
+.contactEmail .logo{
+    font-size: 45px;
 }
 .contactMessage{
     width: 60%;
