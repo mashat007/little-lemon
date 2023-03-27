@@ -1,0 +1,35 @@
+.signupContainer {
+    width: 100%;
+    height: calc(100vh - 80px);
+    padding: 20px;
+}
+.signupContent {
+    width: 400px;
+    height: 460px;
+    margin: 30px auto;
+    /* background: gray; */
+    border: 1px solid #ccc;
+    padding: 30px;
+}
+.signupTitle{
+    margin-bottom: 25px;
+}
+.signupTitle p{
+    font-size: 30px;
+}
+.signupContent input{
+    padding: 8px;
+    width: 340px;
+    margin-bottom: 10px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    outline: none;
+    font-size: 18px;
+}
+
+.signLink {
+    text-decoration: none;
+    margin-left: 5px;
+    color: coral;
+    font-weight: 600;
+}

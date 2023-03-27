@@ -19,30 +19,27 @@ const Navbar = () => {
         <>
             <nav className='nav'>
                 <NavLink to="/" className="navLink">
-                    Logo
+                    GitFood
                 </NavLink>
                 <div className="hamburger">
                     <MenuIcon className='hamburger-icon' onClick={handleClick} />
                 </div>
                 <div className="navMenu">
-                    <NavLink to="/" className="navLink"  activeStyle >
+                    <NavLink to="/" className="navLink">
                         Home
                     </NavLink>
-                    <NavLink to="/about" className="navLink"  activeStyle >
+                    <NavLink to="/about" className="navLink">
                         About
                     </NavLink>
-                    <NavLink to="/services" className="navLink" activeStyle>
-                        Services
-                    </NavLink>
-                    <NavLink to="/contact" className="navLink" activeStyle>
+                    <NavLink to="/contact" className="navLink">
                         Contact Us
                     </NavLink>
-                    <NavLink to="/signup" className="navLink" activeStyle>
+                    <NavLink to="/signup" className="navLink">
                         Sign up
                     </NavLink>
                 </div>
                 <div className="signin">
-                    <NavLink to="/signin" className="navLink" activeStyle>
+                    <NavLink to="/signin" className="navLink">
                         Sign-in
                     </NavLink>
                 </div>
@@ -50,19 +47,16 @@ const Navbar = () => {
             <div id="mobileLink">
             <nav className='nav'>
                 <div className="navMenu">
-                    <NavLink to="/about" className="navLink"  activeStyle >
+                    <NavLink to="/about" className="navLink">
                         About
                     </NavLink>
-                    <NavLink to="/services" className="navLink" activeStyle>
-                        Services
-                    </NavLink>
-                    <NavLink to="/contact" className="navLink" activeStyle>
+                    <NavLink to="/contact" className="navLink">
                         Contact Us
                     </NavLink>
-                    <NavLink to="/signup" className="navLink" activeStyle>
+                    <NavLink to="/signup" className="navLink">
                         Sign up
                     </NavLink>
-                    <NavLink to="/signin" className="navLink" activeStyle>
+                    <NavLink to="/signin" className="navLink">
                         Sign in
                     </NavLink>
                 </div>

@@ -1,0 +1,44 @@
+
+.homeContainer{
+    height: calc(100vh - 80px);
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url('../img/home.jpg');
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #ccc;
+}
+.homeContainer h1{
+    text-align: center;
+}
+
+.homeContainer .btn-click{
+    margin-top: 25px;
+    padding: 12px 40px;
+    border: 0;
+    cursor: pointer;
+    background: #111;
+    color: #fff;
+    font-size: 18px;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.homeContainer .btn-click:hover{
+    opacity: 0.8;
+}
+
+
+
+
+/* Responsive */
+
+@media screen and (max-width: 768px) {
+    .homeContainer{
+        flex-direction: column;
+        text-align: center;
+    }
+}

@@ -17,6 +17,9 @@
     cursor: pointer;
     font-size: 18px;
 }
+.navLink:hover{
+    border-bottom: 2px solid #fff;
+}
 
 .navLink:active{
     color: #15cdfc;

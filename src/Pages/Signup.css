@@ -1,0 +1,106 @@
+
+.signinContainer{
+    display: flex;
+    padding: 60px;
+}
+.signinContent {
+    width: 50%;
+    height: 450px;
+    /* background-color: aqua; */
+    padding: 50px;
+    border: 1px solid #ccc;
+}
+.signinImg {
+    width: 50%;
+    height: 450px;
+    background:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('../img/2.jpg');
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.imgContent{
+    width: 200px;
+    height: 200px;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    color: #ccc;
+}
+.textSmall{
+    font-size: 10px;
+    margin-top: 20px;
+}
+.siginTitle {
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 30px;
+}
+.siginTitle p{
+    padding-bottom: 10px;
+    font-size: 30px;
+}
+
+.signinContent input{
+    padding: 8px;
+    margin: 10px 0px;
+    width: 300px;
+    outline: none;
+    font-size: 16px;
+}
+button{
+    padding: 10px 40px;
+    background: black;
+    color: #fff;
+    border: 0;
+    cursor: pointer;
+    margin-top: 20px;
+    font-weight: 600;
+}
+button:hover{
+    opacity: 0.7;
+}
+
+.btnLink {
+    display: flex;
+    margin-top: 20px;
+}
+
+.btnLink .signLink {
+    text-decoration: none;
+    margin-left: 10px;
+    color: coral;
+}
+
+
+
+
+
+/* Responsive code */
+@media screen and (max-width:768px) {
+    .signinContainer{
+        flex-direction: column-reverse;
+        padding: 10px;
+        height: 100%;
+    }   
+    .signinContent {
+        width: 100%;
+        height: 400px;
+        padding: 20px;
+        border: 1px solid #ccc;
+    }
+    .signinImg {
+        width: 100%;
+        height: 400px;
+    } 
+    .imgContent{
+        width: 250px;
+        height: 250px;
+        padding: 30px;
+        color: #ccc;
+        font-size: 18px;
+    }
+    .textSmall{
+        font-size: 15px;
+        margin-top: 20px;
+    }
+}
