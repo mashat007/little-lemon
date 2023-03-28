@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/little-lemon/static/css/main.b49156df.css",
+    "main.js": "/little-lemon/static/js/main.063177ee.js",
+    "static/media/home.jpg": "/little-lemon/static/media/home.71533b90a5bb18008fca.jpg",
+    "static/media/3.jpg": "/little-lemon/static/media/3.b1ff885694677a6424bd.jpg",
+    "static/media/2.jpg": "/little-lemon/static/media/2.5117402c589b32ddf0df.jpg",
+    "index.html": "/little-lemon/index.html",
+    "main.b49156df.css.map": "/little-lemon/static/css/main.b49156df.css.map",
+    "main.063177ee.js.map": "/little-lemon/static/js/main.063177ee.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b49156df.css",
+    "static/js/main.063177ee.js"
+  ]
+}
